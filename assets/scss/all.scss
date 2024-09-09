@@ -1,7 +1,12 @@
-@import '../../node_modules/bootstrap/scss/functions';
+@import 'bootstrap/scss/functions';
 @import './helpers/variables';
-@import '../../node_modules/bootstrap';
+@import './helpers/custom-colors.scss';
 
+
+@import 'bootstrap/scss/bootstrap';
+@import './helpers/custom-buttons.scss';
+
+@import './helpers/utilities';
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
