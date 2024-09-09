@@ -1,0 +1,54 @@
+.btn {
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    &:disabled {
+        background-color: #E3E3E3;
+        border-color: #E3E3E3;
+        color: $neutral-300;
+    }
+}
+
+// icon selected to be done
+.btn-primary {
+    color: $primary-900;
+
+    &:active,
+    &:focus {
+        color: $primary-100;
+        background-color: $primary;
+    }
+
+}
+svg {
+    fill: currentColor;
+}
+.btn-primary:active svg {
+    fill: white; /* 點擊時更改顏色 */
+}
+
+.btn-secondary {
+    color: white;
+    background-color: $neutral-400;
+    border: 1px solid $primary;
+
+    &:active,
+    &:focus {
+        color: white;
+        background-color: $primary;
+        border: 1px solid $primary;
+    }
+}
+
+.btn-thirdy {
+    color: $neutral-100;
+    background-color: $neutral-600;
+    border: 1px solid $primary;
+
+    &:active,
+    &:focus {
+        color: $primary-200;
+        background-color: $neutral-600;
+    }
+}
