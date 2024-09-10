@@ -10,7 +10,6 @@
     }
 }
 
-// icon selected to be done
 .btn-primary {
     color: $primary-900;
 
@@ -18,37 +17,44 @@
     &:focus {
         color: $primary-100;
         background-color: $primary;
+        transition: all 0.1s ease-in-out;
+        transition-delay: 0s; // 確保沒有延遲
+        svg path {
+            fill: white;
+            transition: fill 0.1s ease-in-out;
+            transition-delay: 0s; // 確保沒有延遲
+        }
     }
 
-}
-svg {
-    fill: currentColor;
-}
-.btn-primary:active svg {
-    fill: white; /* 點擊時更改顏色 */
 }
 
 .btn-secondary {
     color: white;
     background-color: $neutral-400;
-    border: 1px solid $primary;
+    border-color: $primary;
 
     &:active,
     &:focus {
         color: white;
         background-color: $primary;
-        border: 1px solid $primary;
+        border-color: $primary;
     }
 }
 
 .btn-thirdy {
     color: $neutral-100;
     background-color: $neutral-600;
-    border: 1px solid $primary;
+    transition: all 0.1s ease-in-out;
+    transition-delay: 0s;
 
     &:active,
     &:focus {
-        color: $primary-200;
-        background-color: $neutral-600;
+        color: #e3702d;
+        border-color: $primary;
+        svg path{
+            fill: #e3702d; 
+            transition: fill 0.1s ease-in-out;
+            transition-delay: 0s;
+        }
     }
 }
