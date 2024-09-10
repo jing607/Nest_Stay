@@ -6,6 +6,9 @@
 @import 'bootstrap/scss/bootstrap';
 
 @import './helpers/utilities';
+@import "bootstrap/scss/utilities/api";
+
+@import "./base/base";
 @import './components/buttons.scss';
 @import './components/avatars.scss';
 
