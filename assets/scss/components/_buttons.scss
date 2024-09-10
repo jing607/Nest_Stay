@@ -17,8 +17,12 @@
     &:focus {
         color: $primary-100;
         background-color: $primary;
-        svg path{
-            fill: white; 
+        transition: all 0.1s ease-in-out;
+        transition-delay: 0s; // 確保沒有延遲
+        svg path {
+            fill: white;
+            transition: fill 0.1s ease-in-out;
+            transition-delay: 0s; // 確保沒有延遲
         }
     }
 
@@ -40,6 +44,8 @@
 .btn-thirdy {
     color: $neutral-100;
     background-color: $neutral-600;
+    transition: all 0.1s ease-in-out;
+    transition-delay: 0s;
 
     &:active,
     &:focus {
@@ -47,6 +53,8 @@
         border-color: $primary;
         svg path{
             fill: #e3702d; 
+            transition: fill 0.1s ease-in-out;
+            transition-delay: 0s;
         }
     }
 }
