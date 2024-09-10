@@ -1,0 +1,35 @@
+.avatar {
+    width: 60px;    
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &-sm {
+        width: 40px;
+        height: 40px;
+    }
+
+    &-img {
+        transform: scale(1.5) translateY(10%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// .avatar-group {
+    .avatar-desc {
+        position: absolute;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: $neutral-600;
+        .avatar-text {
+            color: $primary-100;
+            text-align: center;
+            font-weight: $font-weight-medium;
+            font-size: $h9-font-size;
+            letter-spacing: 2px;
+        }
+    }
+// }
+
