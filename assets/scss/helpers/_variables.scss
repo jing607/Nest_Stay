@@ -449,7 +449,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align:           null !default;
-$body-color:                #ffffff; //$gray-900 !default; CUSTOM
+$body-color:                #ffffff;//$gray-900 !default; CUSTOM
 $body-bg:                   #2b2b2b; //$neutral-700; // $white !default; CUSTOM
 
 $body-secondary-color:      rgba($body-color, .75) !default;
