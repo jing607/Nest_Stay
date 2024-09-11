@@ -6,10 +6,11 @@
 @import 'bootstrap/scss/bootstrap';
 
 @import './helpers/utilities';
+@import "bootstrap/scss/utilities/api";
+
+@import "./base/base";
 @import './components/buttons.scss';
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 @import './pages/index.scss';
-
-$body-bg:                   $neutral-700; // $white !default; CUSTOM
