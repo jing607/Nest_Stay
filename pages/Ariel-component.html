@@ -32,9 +32,9 @@
     <div class="select-custom">
         <select class="form-select" aria-label="Default select example">
             <option selected >2024/08/07 -2024/08/08 ( 共1晚 )</option>
-            <option value="1">2024/08/07 -2024/08/08 ( 共1晚 )</option>
-            <option value="2">2024/08/07 -2024/08/08 ( 共1晚 )</option>
-            <option value="3">2024/08/07 -2024/08/08 ( 共1晚 )</option>
+            <option value="1">2024/08/07 -2024/08/09 ( 共2晚 )</option>
+            <option value="2">2024/08/07 -2024/08/10 ( 共3晚 )</option>
+            <option value="3">2024/08/07 -2024/08/11 ( 共4晚 )</option>
         </select>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_439_684)">
@@ -47,7 +47,31 @@
             </defs>
             </svg>
     </div>
+<!-- modal -->
 
+   <!-- Button trigger modal -->
+<button type="button" class="modal-custom-btn btn btn-primary " data-bs-toggle="modal" data-bs-target="#modal-custom">
+    送出申請
+</button>
+
+<!-- Modal -->
+<div class="modal-custom modal fade" id="modal-custom" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="customModalLabel">已送出申請，等待審核中</h1>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body">
+        <img src="../assets/images/illustration/illu-for-modal.svg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-thirdy" data-bs-dismiss="modal">回首頁</button>
+        <button type="button" class="btn btn-primary">前往併團列表</button>
+      </div>
+    </div>
+  </div>
+</div>
     <script type="module" src="../main.js"></script>
 </body>
 
