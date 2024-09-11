@@ -22,7 +22,11 @@
     border: 2px solid $primary;
 }
 
-.avatar-group {
+.avatar-wrap {
+    display: flex;
+}
+
+.avatar-profile {
     display: flex;
     position: relative;
 
@@ -50,7 +54,7 @@
         position: absolute;
         top: 100%;
         left: 100%;
-        transform: translate(-80%, -80%);
+        transform: translate(-100%, -100%);
 
         .badge-cover {
             padding: 1.6px;
