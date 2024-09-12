@@ -1,3 +1,4 @@
+/* 只有一個按鈕的 bottom sheet */
 .bottom-sheet {
     padding: 32px;
     border-radius: 16px 16px 0 0;
@@ -11,3 +12,52 @@
     }
 }
 
+/* 有金額的下單用的 bottom sheet */
+.date-sheet {
+    .date-picker {
+        padding: 8px;
+        border: 1px solid $primary;
+        border-radius: 8px;
+        
+        &-row {
+            display: flex;
+            justify-content: space-evenly;
+            height: 26.7px;
+            border-bottom: 1px solid rgba(220, 220, 220, 0.20);
+        }
+    }
+
+    .date {
+        padding: 4px 0;
+        width: 42px;
+        text-align: center;
+    }
+
+    .selected {
+        position: relative;
+    }
+
+    .selected-start::after {
+        content: "";
+        background-color: $primary;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 100px 0 0 100px;
+    }
+
+    .selected-end::after {
+        content: "";
+        background-color: $primary;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 150%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 0 100px 100px 0;
+    }
+}
