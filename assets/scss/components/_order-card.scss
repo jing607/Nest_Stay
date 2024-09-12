@@ -1,0 +1,51 @@
+.order-card {
+    height: 184px;
+    padding: 20px;
+    border: 0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+        display: flex;
+        align-items: center;
+    } 
+
+    &-cover {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 96px;
+        height: 96px;
+    }
+
+    .tag {
+        position: absolute;
+        padding: 4px 8px;
+        background-color: $neutral-600;
+        border-radius: 8px 0;
+    }
+
+    &-img {
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 4px;
+    }
+}
+
+.line-dash {
+    width: 10px;
+    height: 1px;
+    background-color: white;
+}
