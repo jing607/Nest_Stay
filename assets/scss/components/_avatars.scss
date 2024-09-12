@@ -43,10 +43,9 @@
         .avatar-text {
             color: $primary-100;
             text-align: center;
-            font-weight: $font-weight-medium;
-            font-size: $h9-font-size;
-            letter-spacing: 2px;
-            line-height: 100%;
+            font-weight: $font-weight-bold;
+            letter-spacing: 0.032px;
+            line-height: 160%;
         }
     }
 
