@@ -1,0 +1,14 @@
+.bottom-sheet {
+    padding: 32px;
+    border-radius: 16px 16px 0 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-only-sheet {
+    .btn {
+      display: inline-block;
+      width: 100%;
+    }
+  }
