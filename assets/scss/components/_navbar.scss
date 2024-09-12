@@ -1,0 +1,30 @@
+.search,.top-title, .top-btn {
+    width: 343px;
+    margin-inline: auto;
+    gap: 4px;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: $primary;
+    background-color: $neutral-700;
+    border-color: $neutral-700;
+    border-bottom: 2px solid $primary;
+}
+.nav-tabs .nav-link {
+    border-bottom: 2px solid $neutral-700;
+    
+    &:hover, &:focus, &:active {
+        border-color: $neutral-700;
+        border-bottom: 2px solid $primary;
+    }
+}
+.nav-link {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.028px;
+}
+
+.w-33 {
+    width: 33.33%;
+}
