@@ -1,0 +1,89 @@
+/* bottom sheet 共用結構 */
+.bottom-sheet {
+    padding: 32px;
+    border-radius: 16px 16px 0 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    .btn {
+      display: inline-block;
+      width: 100%;
+    }
+}
+
+/* 選擇日期的 bottom sheet */
+.date-sheet {
+    .date-picker {
+        padding: 8px;
+        border: 1px solid $primary;
+        border-radius: 8px;
+        
+        &-row {
+            display: flex;
+            justify-content: space-evenly;
+            height: 26.7px;
+            border-bottom: 1px solid rgba(220, 220, 220, 0.20);
+        }
+    }
+
+    .date {
+        padding: 4px 0;
+        width: 42px;
+        text-align: center;
+    }
+
+    .selected {
+        position: relative;
+    }
+
+    .selected-start::after {
+        content: "";
+        background-color: $primary;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 100px 0 0 100px;
+    }
+
+    .selected-end::after {
+        content: "";
+        background-color: $primary;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 150%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 0 100px 100px 0;
+    }
+}
+
+/* 選擇人數的 bottom sheet */
+.people-sheet {
+    .people-picker {
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid rgba(220, 220, 220, 0.20);
+    }
+
+    .people-gender {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .people-counter {
+        display: flex;
+        align-items: center;
+    }
+    
+    .people-count {
+        width: 52px;
+        text-align: center;
+        padding: 4px;
+    }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+  </head>
+  <body>
+    <!-- 只有一個按鈕的 bottom sheet -->
+    <div class="bottom-sheet bg-neutral-900">
+      <div class="btn-only-sheet">
+        <button href="#" class="btn btn-primary">返回</button>
+      </div>
+    </div>
+
+    <!-- 有金額的下單用的 bottom sheet -->
+    <div class="bottom-sheet bg-neutral-900">
+      <div class="price-sheet">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <p class="fs14-normal-lh120">金額</p>
+          <p class="fs20-bold-lh140 text-primary">TWD  7,186</p>
+        </div>
+        <div class="d-flex gap-3">
+          <button href="#" class="btn btn-thirdy">一般訂房</button>
+          <button href="#" class="btn btn-primary">併團 / 開團</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 選擇日期的 bottom sheet -->
+    <div class="bottom-sheet bg-neutral-900">
+      <div class="date-sheet">
+        <h3 class="mb-4 fs20-bold-lh140">選擇日期</h3>
+
+        <ol class="date-picker mb-4">
+          <li class="date-picker-row">
+            <div class="date fs14-normal-lh120">26</div>
+            <div class="date fs14-normal-lh120">27</div>
+            <div class="date fs14-normal-lh120">28</div>
+            <div class="date fs14-normal-lh120">29</div>
+            <div class="date fs14-normal-lh120">30</div>
+            <div class="date fs14-normal-lh120">31</div>
+            <div class="date fs14-normal-lh120">1</div>
+          </li>
+          <li class="date-picker-row">
+            <div class="date fs14-normal-lh120">2</div>
+            <div class="date fs14-normal-lh120">3</div>
+            <div class="date fs14-normal-lh120">4</div>
+            <div class="date fs14-normal-lh120">5</div>
+            <div class="date fs14-normal-lh120">6</div>
+            <div class="date fs14-normal-lh120">7</div>
+            <div class="date fs14-normal-lh120">8</div>
+          </li>
+          <li class="date-picker-row">
+            <div class="date fs14-normal-lh120">9</div>
+            <div class="date fs14-normal-lh120">10</div>
+            <div class="date fs14-normal-lh120">11</div>
+            <div class="date fs14-normal-lh120">12</div>
+            <div class="date fs14-normal-lh120">13</div>
+            <div class="date fs14-normal-lh120">14</div>
+            <div class="date fs14-normal-lh120">15</div>
+          </li>
+          <li class="date-picker-row">
+            <div class="date fs14-normal-lh120">16</div>
+            <div class="date fs14-normal-lh120">17</div>
+            <div class="date fs14-normal-lh120">18</div>
+            <div class="date fs14-normal-lh120 selected selected-start">19</div>
+            <div class="date fs14-normal-lh120 selected selected-end">20</div>
+            <div class="date fs14-normal-lh120">21</div>
+            <div class="date fs14-normal-lh120">22</div>
+          </li>
+          <li class="date-picker-row">
+            <div class="date fs14-normal-lh120">23</div>
+            <div class="date fs14-normal-lh120">24</div>
+            <div class="date fs14-normal-lh120">25</div>
+            <div class="date fs14-normal-lh120">26</div>
+            <div class="date fs14-normal-lh120">27</div>
+            <div class="date fs14-normal-lh120">28</div>
+            <div class="date fs14-normal-lh120">29</div>
+          </li>
+          <li class="date-picker-row">
+            <div class="date fs14-normal-lh120">30</div>
+            <div class="date fs14-normal-lh120">31</div>
+            <div class="date fs14-normal-lh120">1</div>
+            <div class="date fs14-normal-lh120">2</div>
+            <div class="date fs14-normal-lh120">3</div>
+            <div class="date fs14-normal-lh120">4</div>
+            <div class="date fs14-normal-lh120">5</div>
+          </li>
+        </ol>
+
+        <div class="d-flex gap-3">
+          <button href="#" class="btn btn-thirdy">清除重選</button>
+          <button href="#" class="btn btn-primary">確定日期</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 選擇人數的 bottom sheet -->
+    <div class="bottom-sheet bg-neutral-900">
+      <div class="people-sheet">
+        <h3 class="mb-4 fs20-bold-lh140">選擇人數</h3>
+
+        <div class="people-picker">
+          <div class="people-gender">
+            <p class="fs16-bold-lh150">生理男</p>
+            <div class="people-counter">
+              <a href="#" class="d-flex me-1">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z" fill="white"/>
+                </svg>
+              </a>
+              <span class="people-count">1</span>
+              <a href="#" class="d-flex ms-1">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C12.5523 4 13 4.44772 13 5V19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19V5C11 4.44772 11.4477 4 12 4Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z" fill="white"/>
+                </svg>              
+              </a>
+            </div>
+          </div>
+          <div class="people-gender">
+            <p class="fs16-bold-lh150">生理女</p>
+            <div class="people-counter">
+              <a href="#" class="d-flex me-1">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z" fill="white"/>
+                </svg>
+              </a>
+              <span class="people-count">0</span>
+              <a href="#" class="d-flex ms-1">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C12.5523 4 13 4.44772 13 5V19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19V5C11 4.44772 11.4477 4 12 4Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z" fill="white"/>
+                </svg>              
+              </a>
+            </div>
+          </div>
+          <div class="people-gender">
+            <p class="fs16-bold-lh150">跨性別</p>
+            <div class="people-counter">
+              <a href="#" class="d-flex me-1">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z" fill="white"/>
+                </svg>
+              </a>
+              <span class="people-count">0</span>
+              <a href="#" class="d-flex ms-1">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C12.5523 4 13 4.44772 13 5V19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19V5C11 4.44772 11.4477 4 12 4Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z" fill="white"/>
+                </svg>              
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 align-items-center">
+          <div class="w-100">
+            <p class="fs16-bold-lh150">
+              共 
+              <span class="px-2 fs16-bold-lh150 text-primary">1</span> 
+              位
+            </p>
+          </div>
+          <button href="#" class="btn btn-primary">併團 / 開團</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
