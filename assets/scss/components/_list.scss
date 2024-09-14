@@ -127,12 +127,14 @@
 }
 
 .list-room-type-info {
+    border: 1px solid rgba(220, 220, 220, 0.20);
+    border-radius: 4px;
 .list-room-type-img {
-    width: 108px;
-    height: 81px;
+    width: 82px;
+    height: 65px;
     object-fit: cover;
     border-radius: 4px;
-     margin-right: 8px;
+    margin-right: 8px;
 }
 }
 
