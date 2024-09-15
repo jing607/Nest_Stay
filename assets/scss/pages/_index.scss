@@ -1,10 +1,10 @@
-.main-content {
-  height: calc(100vh - 145px);
-  overflow-y: auto;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
+// .main-content {
+//   height: calc(100vh - 145px);
+//   overflow-y: auto;
+//   &::-webkit-scrollbar {
+//     display: none;
+//   }
+// }
 
 .home-banner {
      //swiper
@@ -113,5 +113,8 @@
         max-width: calc(100% - 120px - 16px); // 設置最大寬度，減去圖片寬度和左右邊距
     }
   }
+}
 
+.navbar-pb {
+  padding-bottom: 88px;
 }
