@@ -63,7 +63,7 @@
         </svg>
     </div>
 
-    <main class="main-content pb-7">
+    <main class="main-content mb-4 navbar-pb">
         <section class="home-banner mt-10 mb-7">
             <!-- Swiper -->
             <div class="swiper bannerSwiper">
@@ -760,24 +760,24 @@
         </section>
 
     </main>
+    
+    <%- include('./layout/header', {page: "home"}); -%>
 
-    <%- include('./layout/header', {page: "home" }); -%>
 
 
-
-        <!-- Initialize Swiper -->
-        <script>
-            const bannerSwiper = new Swiper(".bannerSwiper", {
-                pagination: {
-                    el: ".swiper-pagination",
-                },
-                loop: true, // 啟用無限循環播放
-                centeredSlides: true,
-                slidesPerView: 1.3, // 顯示部分的第二和第三張圖片
-                spaceBetween: -20, // 調整圖片之間的間距
-            });
-        </script>
-        <script type="module" src="../main.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        const bannerSwiper = new Swiper(".bannerSwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true, // 啟用無限循環播放
+            centeredSlides: true,
+            slidesPerView: 1.3, // 顯示部分的第二和第三張圖片
+            spaceBetween: -20, // 調整圖片之間的間距
+        });
+    </script>
+    <script type="module" src="../main.js"></script>
 </body>
 
 </html>
