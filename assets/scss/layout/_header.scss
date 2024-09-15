@@ -1,4 +1,28 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.nav-link {
+  display: block;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.028px;
+  color: #ffffff;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link.active {
+  color: $primary-200;
+  transition: all 0.1s ease-in-out;
+  transition-delay: 0s; /* 確保沒有延遲 */
+}
+
+.nav-link:hover svg path, .nav-link:focus svg path, .nav-link.active svg path {
+  fill: $primary-200;
+  transition: fill 0.1s ease-in-out;
+  transition-delay: 0s; /* 確保沒有延遲 */
 }
