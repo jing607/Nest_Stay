@@ -1,4 +1,4 @@
-.room-info-banner {
+.room-info-more-banner {
     .room-card {
         width: 100%;
         height: 100%;
@@ -65,14 +65,14 @@
                 background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 58%, rgba(0, 0, 0, 0) 100%);
             } 
         }
-        &-img.house {
-            background: url(/assets/images/home_search_detail-view.png) lightgray 50% / cover no-repeat;
+        &-img.group-order-room {
+            background: url(/assets/images/detail_group_order-room.png) lightgray 50% / cover no-repeat;
         }
-        &-img.search-house {
-            background: url(/assets/images/search-house.png) lightgray 50% / cover no-repeat;
+        &-img.group-order-room-two {
+            background: url(/assets/images/detail-room-2.png) lightgray 50% / cover no-repeat;
         }
-        &-img.search-order-room {
-            background: url(/assets/images/search_order-room.png) lightgray 50% / cover no-repeat;
+        &-img.group-order-room-three {
+            background: url(/assets/images/detail-room-3.png) lightgray 50% / cover no-repeat;
         }
     }
 
@@ -108,30 +108,22 @@
         width:  8px;
         height: 8px;
         border-radius: 100px;
-      }      
-    }
+      }   
 
-.room-service {
-    .room-service-tag-item {
-        width: 70px;
-        height: 62px;
-        border: 1px solid rgba(220, 220, 220, 0.20);
+      .room-info-notice {
+          height: 86px;
+      }
     }
-}
+    
+    .room-info-more.room-service {
+      .room-service-tag-item {
+          width: 65px;
+          height: 58px;
+          border: 1px solid rgba(220, 220, 220, 0.20);
+      }
+  }
 
-.room-evaluate {
-    .card-list {
-        display: flex;
-        gap: 8px;
-        line-height: 1.2;
-        white-space: nowrap;
-        overflow-x: auto; 
-        &::-webkit-scrollbar {
-          display: none;
-        }
-    }
-    .review-card {
-        flex: 0 0 154px; // 固定卡片寬度為300px
-        overflow: hidden; // 隱藏超出部分
-    }
-}
+  .room-info-order {
+    padding-top: 145px;
+  }
+
