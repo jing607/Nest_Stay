@@ -4,11 +4,215 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nest_Stay - order</title>
+    <title>Nest Stay - order</title>
   </head>
   <body>
-    <%- include('./layout/header', {page: "order"}); -%>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item w-33" role="presentation">
+          <button class="nav-link w-100 justify-content-center active py-4" id="upcoming-tab" data-bs-toggle="tab"
+              data-bs-target="#upcoming-tab-pane" type="button" role="tab" aria-controls="upcoming-tab-pane"
+              aria-selected="true">即將到來的旅程</button>
+      </li>
+      <li class="nav-item w-33" role="presentation">
+          <button class="nav-link w-100 justify-content-center py-4" id="past-tab" data-bs-toggle="tab"
+              data-bs-target="#past-tab-pane" type="button" role="tab" aria-controls="past-tab-pane"
+              aria-selected="false">過去的旅程</button>
+      </li>
+      <li class="nav-item w-33" role="presentation">
+          <button class="nav-link w-100 justify-content-center py-4" id="canceled-tab" data-bs-toggle="tab"
+              data-bs-target="#canceled-tab-pane" type="button" role="tab" aria-controls="canceled-tab-pane"
+              aria-selected="false">已取消</button>
+      </li>
+    </ul>
 
+    <main class="tab-content" id="myTabContent">
+        <section class="tab-pane fade show active pt-6 px-4" id="upcoming-tab-pane" role="tabpanel"
+            aria-labelledby="upcoming-tab" tabindex="0">
+            <div class="mb-6">
+              <div class="tab-content__header mb-1">
+                <h1 class="fs20-bold-lh150">高雄市</h1>
+                <p class="fs14-normal-lh120 text-neutral-290">8月19日</p>
+              </div>
+              <a href="#" class="card order-card bg-neutral-900 justify-content-between">
+                <div class="order-card-header">
+                    <div class="order-card-cover me-4">
+                        <div class="tag">
+                            <p class="text-primary-100 fw-bold lh-lg">併團</p>
+                        </div>
+                        <div class="order-card-img">
+                            <img src="/assets/images/detail_group_order-room.png" alt="room">
+                        </div>
+                    </div>
+        
+                    <div class="order-card-content">
+                        <h3 class="fs-7 fw-bold lh-base text-ellipsis">大港咖+1</h3>
+                        <p class="fs-9 lh-xs text-ellipsis">日和灣居 Sunshine Liv.</p>
+                        <div class="d-flex align-items-center gap-1">
+                            <time datetime="2024-08-28" class="fs-9 lh-xs">8月19日(六)</time>
+                            <span class="line-dash"></span>
+                            <time datetime="2024-08-29" class="fs-9 lh-xs">8月20日(日)</time>
+                        </div>
+                        <p class="fw-bold lh-base">TWD 680</p>
+                    </div>    
+                </div>
+        
+                <div class="d-flex align-items-center">
+                    <p class="fs-8 lh-xs">查看訂單</p>
+                    <img src="/assets/images/icon/arrow-right.svg" alt="ic-arrow-right" class="ms-auto">
+                </div>
+              </a>
+            </div>
+
+            <div class="mb-6">
+              <div class="tab-content__header mb-1">
+                <h1 class="fs20-bold-lh150">台南市</h1>
+                <p class="fs14-normal-lh120 text-neutral-290">9月14日</p>
+              </div>
+              <a href="#" class="card order-card bg-neutral-900 justify-content-between">
+                <div class="order-card-header">
+                    <div class="order-card-cover me-4">
+                        <div class="tag d-none">
+                            <p class="text-primary-100 fw-bold lh-lg">併團</p>
+                        </div>
+                        <div class="order-card-img">
+                            <img src="/assets/images/search_order-room.png" alt="room">
+                        </div>
+                    </div>
+        
+                    <div class="order-card-content">
+                        <h3 class="fs-7 fw-bold lh-base text-ellipsis">熱番茄Hostel</h3>
+                        <p class="fs-9 lh-xs text-ellipsis">單人房</p>
+                        <div class="d-flex align-items-center gap-1">
+                            <time datetime="2024-08-28" class="fs-9 lh-xs">9月14日(週六)</time>
+                            <span class="line-dash"></span>
+                            <time datetime="2024-08-29" class="fs-9 lh-xs">9月15日(週日)</time>
+                        </div>
+                        <p class="fw-bold lh-base">TWD $1,200</p>
+                    </div>    
+                </div>
+        
+                <div class="d-flex align-items-center">
+                    <p class="fs-8 lh-xs">查看訂單</p>
+                    <img src="/assets/images/icon/arrow-right.svg" alt="ic-arrow-right" class="ms-auto">
+                </div>
+              </a>
+            </div>
+        </section>
+
+        <section class="tab-pane fade pt-6 px-4" id="past-tab-pane" role="tabpanel" aria-labelledby="past-tab" tabindex="0">
+          <div class="mb-6">
+            <div class="tab-content__header mb-1">
+              <h1 class="fs20-bold-lh150">台中市</h1>
+              <p class="fs14-normal-lh120 text-neutral-290">2月10日</p>
+            </div>
+            <a href="#" class="card order-card bg-neutral-900 justify-content-between">
+              <div class="order-card-header">
+                  <div class="order-card-cover me-4">
+                      <div class="tag">
+                          <p class="text-primary-100 fw-bold lh-lg">併團</p>
+                      </div>
+                      <div class="order-card-img">
+                          <img src="/assets/images/order-room1.png" alt="room">
+                      </div>
+                  </div>
+      
+                  <div class="order-card-content">
+                      <h3 class="fs-7 fw-bold lh-base text-ellipsis">綠居</h3>
+                      <p class="fs-9 lh-xs text-ellipsis">豪華四人房</p>
+                      <div class="d-flex align-items-center gap-1">
+                          <time datetime="2024-08-28" class="fs-9 lh-xs">2月10日(六)</time>
+                          <span class="line-dash"></span>
+                          <time datetime="2024-08-29" class="fs-9 lh-xs">2月11日(日)</time>
+                      </div>
+                      <p class="fw-bold lh-base">TWD $4,450</p>
+                  </div>    
+              </div>
+      
+              <div class="d-flex align-items-center">
+                  <p class="fs-8 lh-xs">查看訂單</p>
+                  <img src="/assets/images/icon/arrow-right.svg" alt="ic-arrow-right" class="ms-auto">
+              </div>
+            </a>
+          </div>
+
+          <div class="mb-6">
+            <div class="tab-content__header mb-1">
+              <h1 class="fs20-bold-lh150">花蓮縣</h1>
+              <p class="fs14-normal-lh120 text-neutral-290">4月13日</p>
+            </div>
+            <a href="#" class="card order-card bg-neutral-900 justify-content-between">
+              <div class="order-card-header">
+                  <div class="order-card-cover me-4">
+                      <div class="tag d-none">
+                          <p class="text-primary-100 fw-bold lh-lg">併團</p>
+                      </div>
+                      <div class="order-card-img">
+                          <img src="/assets/images/order-room3.png" alt="room">
+                      </div>
+                  </div>
+      
+                  <div class="order-card-content">
+                      <h3 class="fs-7 fw-bold lh-base text-ellipsis">時潮旅行</h3>
+                      <p class="fs-9 lh-xs text-ellipsis">單人房</p>
+                      <div class="d-flex align-items-center gap-1">
+                          <time datetime="2024-08-28" class="fs-9 lh-xs">4月13日(週六)</time>
+                          <span class="line-dash"></span>
+                          <time datetime="2024-08-29" class="fs-9 lh-xs">4月14日(週日)</time>
+                      </div>
+                      <p class="fw-bold lh-base">TWD $1,200</p>
+                  </div>    
+              </div>
+      
+              <div class="d-flex align-items-center">
+                  <p class="fs-8 lh-xs">查看訂單</p>
+                  <img src="/assets/images/icon/arrow-right.svg" alt="ic-arrow-right" class="ms-auto">
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="tab-pane fade pt-6 px-4" id="canceled-tab-pane" role="tabpanel" aria-labelledby="canceled-tab"
+            tabindex="0">
+            <div class="mb-6">
+              <div class="tab-content__header mb-1">
+                <h1 class="fs20-bold-lh150">台中市</h1>
+                <p class="fs14-normal-lh120 text-neutral-290">4月13日</p>
+              </div>
+              <a href="#" class="card order-card bg-neutral-900 justify-content-between">
+                <div class="order-card-header">
+                    <div class="order-card-cover me-4">
+                        <div class="tag d-none">
+                            <p class="text-primary-100 fw-bold lh-lg">併團</p>
+                        </div>
+                        <div class="order-card-img">
+                            <img src="/assets/images/order-room2.png" alt="room">
+                        </div>
+                    </div>
+        
+                    <div class="order-card-content">
+                        <h3 class="fs-7 fw-bold lh-base text-ellipsis">逢甲商旅</h3>
+                        <p class="fs-9 lh-xs text-ellipsis">溫暖四人房</p>
+                        <div class="d-flex align-items-center gap-1">
+                            <time datetime="2024-08-28" class="fs-9 lh-xs">2月10日(六)</time>
+                            <span class="line-dash"></span>
+                            <time datetime="2024-08-29" class="fs-9 lh-xs">2月11日(日)</time>
+                        </div>
+                        <p class="fw-bold lh-base">TWD $6,880</p>
+                    </div>    
+                </div>
+        
+                <div class="d-flex align-items-center">
+                    <p class="fs-8 lh-xs">查看訂單</p>
+                    <img src="/assets/images/icon/arrow-right.svg" alt="ic-arrow-right" class="ms-auto">
+                </div>
+              </a>
+            </div>
+        </section>
+    </main>
+
+    <%- include('./layout/header', {page: "home"}); -%>
+
+   
     <script type="module" src="../main.js"></script>
   </body>
 </html>
