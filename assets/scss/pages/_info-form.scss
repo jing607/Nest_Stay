@@ -37,5 +37,28 @@
             resize: none;
         }
     }
+    
+    .form-check-input:checked[type=radio] {
+        background-color: white;
+        border-color: $primary;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $primary;
+            transform: translate(-50%, -50%);
+            border: 2px solid white;
+        }
+    }
+    
+    .form-check-input {
+        background-color: $neutral-300;
+        border: 2px solid #A3A3A3;
+        position: relative;
+    }
 
 }
