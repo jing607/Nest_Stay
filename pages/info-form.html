@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nest Stay - form</title>
+  </head>
+  <body>
+    <div class="info-form__header p-4 mb-2">
+        <a href="../pages/index.html" class="top-title fs20-bold-lh120 d-flex align-items-center py-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.7071 5.29289C16.0976 5.68342 16.0976 6.31658 15.7071 6.70711L10.4142 12L15.7071 17.2929C16.0976 17.6834 16.0976 18.3166 15.7071 18.7071C15.3166 19.0976 14.6834 19.0976 14.2929 18.7071L8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929L14.2929 5.29289C14.6834 4.90237 15.3166 4.90237 15.7071 5.29289Z"
+                    fill="white" />
+            </svg>
+
+            填寫個人資料
+        </a>
+    </div>
+
+    <form class="info-form main-content px-4">
+        <div class="info-form__name mb-6">
+            <div class="d-flex align-items-center mb-3">
+                <h2 class="fs14-normal-lh120">姓名</h2>
+                <span class="px-1 fs14-normal-lh120 text-neutral-290">｜</span>
+                <p class="fs14-normal-lh120 text-neutral-290">於併團顯示之名稱</p>
+            </div>
+
+            <div class="mb-3">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label fs14-normal-lh120" for="flexRadioDefault1">
+                        本名
+                    </label>
+                </div>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="陳曉艾" disabled>
+            </div>
+
+            <div class="mb-3">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label fs14-normal-lh120" for="flexRadioDefault2">
+                        綽號
+                    </label>
+                </div>
+                <input type="text" class="form-control bg-neutral-350 text-white" id="exampleFormControlInput1 fs14-normal-lh120" placeholder="小艾">
+            </div>
+        </div>
+
+        <div class="info-form__email mb-6">
+            <div class="mb-3">
+                <label for="formControlEmail" class="form-label fs14-normal-lh120">電子信箱</label>
+                <input type="email" class="form-control" id="formControlEmail" placeholder="callmemaybe123@abc.com" disabled>
+            </div>
+        </div>
+        
+        <div class="info-form__tel mb-6">
+            <div class="mb-3">
+                <label for="formControlTel" class="form-label fs14-normal-lh120">手機</label>
+                <input type="tel" class="form-control" id="formControlTel" placeholder="0911234567" disabled>
+            </div>
+        </div>
+        
+        <div class="info-form__location mb-6">
+            <div class="mb-3">
+                <label for="formControlInputLocation" class="form-label fs14-normal-lh120">所在位置</label>
+                <div class="select-custom">
+                    <select class="form-select form-control fs14-normal-lh120" aria-label="Default select example" id="formControlInputLocation">
+                        <option selected>台北市</option>
+                        <option value="1">新北市</option>
+                        <option value="2">桃園市</option>
+                        <option value="4">臺中市</option>
+                        <option value="5">臺南市</option>
+                        <option value="6">高雄市</option>
+                    </select>
+                  </div>
+            </div>
+        </div>
+        
+        <div class="info-form__description mb-10">
+            <div class="mb-3">
+                <label for="formControlInputDescription" class="form-label fs14-normal-lh120">加入原因</label>
+                <textarea class="form-control custom-textarea" id="formControlInputDescription" placeholder="字數限制200" aria-label="With textarea"></textarea>
+            </div>
+        </div>
+    </form>
+    <div class="bottom-sheet bg-neutral-900">
+        <div class="btn-only-sheet">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-custom">送出申請</button>
+        </div>
+    </div>
+  
+    <!-- Modal -->
+    <div class="modal-custom modal fade" id="modal-custom" tabindex="-1" aria-labelledby="customModalLabel"
+    aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs20-bold-lh140" id="customModalLabel">已送出申請，等待審核中</h1>
+            </div>
+            <div class="modal-body">
+                <img src="../assets/images/illustration/illu-for-modal.svg" alt="">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-thirdy btn-bold-lh130" data-bs-dismiss="modal">回首頁</button>
+                <button type="button" class="btn btn-primary btn-bold-lh130">前往併團列表</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

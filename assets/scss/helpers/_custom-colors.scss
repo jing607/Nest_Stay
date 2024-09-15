@@ -1,0 +1,48 @@
+$primary: #e3702d;
+$primary-100: #ffb691;
+$primary-200: #ff8d4e;
+$primary-500: #9f4200;
+$primary-900: #341100;
+
+$danger: #a80710;
+$danger-200: #ff897d;
+
+$neutral-90: #d7d7d7;
+$neutral-100: #d0d0d0;
+$neutral-200: #999999;
+$neutral-290: #858585;
+$neutral-300: #7f7f7f;
+$neutral-350: #595959;
+$neutral-400: #4d4d4d;
+$neutral-500: #414141;
+$neutral-600: #363636;
+$neutral-700: #2b2b2b;
+$neutral-800: #232323;
+$neutral-900: #1d1d1d;
+
+$custom-colors: (
+    "primary": $primary,
+    "primary-100": $primary-100,
+    "primary-200": $primary-200,
+    "primary-500": $primary-500,
+    "primary-900": $primary-900,
+
+    "danger": $danger,
+    "danger-200": $danger-200,
+
+    
+    "neutral-90": $neutral-90,
+    "neutral-100": $neutral-100,
+    "neutral-200": $neutral-200,
+    "neutral-290": $neutral-290,
+    "neutral-300": $neutral-300,
+    "neutral-350": $neutral-350,
+    "neutral-400": $neutral-400,
+    "neutral-500": $neutral-500,
+    "neutral-600": $neutral-600,
+    "neutral-700": $neutral-700,
+    "neutral-800": $neutral-800,
+    "neutral-900": $neutral-900,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);

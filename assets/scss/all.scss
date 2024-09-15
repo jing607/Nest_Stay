@@ -1,8 +1,35 @@
-@import '../../node_modules/bootstrap/scss/functions';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+@import 'bootstrap/scss/functions';
 @import './helpers/variables';
-@import '../../node_modules/bootstrap';
+@import './helpers/custom-colors.scss';
+
+
+@import 'bootstrap/scss/bootstrap';
+
+@import './helpers/utilities';
+@import "bootstrap/scss/utilities/api";
+
+@import "./base/base";
+@import './components/buttons.scss';
+@import './components/avatars.scss';
+@import './components/user-card';
+@import './components/order-card';
+@import './components/bottom-sheet';
+@import './components/room-card';
+@import './components/banner-card';
+@import './components/input.scss';
+@import './components/modal.scss';
+@import './components/list.scss';
+@import './components/navbar.scss';
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 @import './pages/index.scss';
+@import './pages/room-info.scss';
+@import './pages/room-info-more.scss';
+@import './pages/join.scss';
+@import './pages/result';
+@import './pages/order';
+@import './pages/info-form';

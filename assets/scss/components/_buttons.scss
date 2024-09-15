@@ -1,0 +1,60 @@
+.btn {
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    &:disabled {
+        background-color: #E3E3E3;
+        border-color: #E3E3E3;
+        color: $neutral-300;
+    }
+}
+
+.btn-primary {
+    color: $primary-900;
+
+    &:active,
+    &:focus {
+        color: $primary-100;
+        background-color: $primary;
+        transition: all 0.1s ease-in-out;
+        transition-delay: 0s; // 確保沒有延遲
+        svg path {
+            fill: white;
+            transition: fill 0.1s ease-in-out;
+            transition-delay: 0s; // 確保沒有延遲
+        }
+    }
+
+}
+
+.btn-secondary {
+    color: white;
+    background-color: $neutral-400;
+    border-color: $primary;
+
+    &:active,
+    &:focus {
+        color: white;
+        background-color: $primary;
+        border-color: $primary;
+    }
+}
+
+.btn-thirdy {
+    color: $neutral-100;
+    background-color: $neutral-600;
+    transition: all 0.1s ease-in-out;
+    transition-delay: 0s;
+
+    &:active,
+    &:focus {
+        color: #e3702d;
+        border-color: $primary;
+        svg path{
+            fill: #e3702d; 
+            transition: fill 0.1s ease-in-out;
+            transition-delay: 0s;
+        }
+    }
+}
