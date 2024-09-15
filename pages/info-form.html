@@ -87,7 +87,26 @@
     </form>
     <div class="bottom-sheet bg-neutral-900">
         <div class="btn-only-sheet">
-          <button class="btn btn-primary">送出申請</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-custom">送出申請</button>
+        </div>
+    </div>
+  
+    <!-- Modal -->
+    <div class="modal-custom modal fade" id="modal-custom" tabindex="-1" aria-labelledby="customModalLabel"
+    aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs20-bold-lh140" id="customModalLabel">已送出申請，等待審核中</h1>
+            </div>
+            <div class="modal-body">
+                <img src="../assets/images/illustration/illu-for-modal.svg" alt="">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-thirdy btn-bold-lh130" data-bs-dismiss="modal">回首頁</button>
+                <button type="button" class="btn btn-primary btn-bold-lh130">前往併團列表</button>
+            </div>
+            </div>
         </div>
     </div>
 
