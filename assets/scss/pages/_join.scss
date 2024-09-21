@@ -72,7 +72,7 @@
             background: url(/assets/images/search-house.png) lightgray 50% / cover no-repeat;
         }
         &-img.search-order-room {
-            background: url(/assets/images/search_order-room.png) lightgray 50% / cover no-repeat;
+            background: url(/assets/images/detail-room-5.png) lightgray 50% / cover no-repeat;
         }
     }
 
@@ -156,3 +156,11 @@
         position: relative;
    }
 }
+
+.modal-close-btn {
+    margin-left: 223px;
+    top: 4px;
+    color: $primary;
+}
+
+

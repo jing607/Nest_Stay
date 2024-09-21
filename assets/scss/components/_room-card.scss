@@ -20,18 +20,7 @@
         z-index: 1;    
     }
 
-    .ic-bg-cover {
-        position: absolute;
-        right: 0;
-        padding: 8px;
-        margin: 8px;
-        border-radius: 50%;
-        background-color: rgba(0, 0, 0, 0.31); 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1;
-    }
+    
 
     &-img {
         width: 100%;
@@ -96,19 +85,6 @@
         z-index: 1;    
     }
 
-    .ic-bg-cover {
-        position: absolute;
-        right: 0;
-        padding: 8px;
-        margin: 8px;
-        border-radius: 50%;
-        background-color: rgba(0, 0, 0, 0.31); 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1;
-    }
-
     .location {
         position: absolute;
         left: 0;
@@ -162,5 +138,33 @@
 
     .divider-vertical {
         margin: 0 4px;
+    }
+}
+
+
+.ic-bg-cover {
+    position: absolute;
+    right: 0;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.31); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    svg path {
+        transition: fill 0.1s ease, stroke 0.05s ease;
+    }
+    
+    input[type="checkbox"]:checked + label svg path {
+        fill: $primary;
+        stroke: $primary;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
     }
 }

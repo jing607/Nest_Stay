@@ -78,7 +78,7 @@
             </div>
         </div>
         
-        <div class="info-form__description mb-10">
+        <div class="info-form__description mb-10" id="description-input">
             <div class="mb-3">
                 <label for="formControlInputDescription" class="form-label fs14-normal-lh120">加入原因</label>
                 <textarea class="form-control custom-textarea" id="formControlInputDescription" placeholder="字數限制200" aria-label="With textarea"></textarea>
@@ -105,12 +105,27 @@
             </div>
             <div class="modal-footer">
                 <a href="index.html" type="button" class="btn btn-thirdy btn-bold-lh130">回首頁</a>
-                <a href="order.html" type="button" class="btn btn-primary btn-bold-lh130">前往併團列表</a>
+                <a href="#" type="button" class="btn btn-primary btn-bold-lh130">查看訂單詳情</a>
             </div>
             </div>
         </div>
     </div>
 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const textarea = document.getElementById('formControlInputDescription');
+        const maxLength = 200;
+
+        textarea.addEventListener('input', function() {
+            if (textarea.value.length > maxLength) {
+                textarea.classList.add('error');
+            } else {
+                textarea.classList.remove('error');
+            }
+        });
+    });
+    </script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

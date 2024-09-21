@@ -51,7 +51,7 @@
     &:focus {
         color: #e3702d;
         border-color: $primary;
-        svg path{
+        svg path, svg circle{
             fill: #e3702d; 
             transition: fill 0.1s ease-in-out;
             transition-delay: 0s;

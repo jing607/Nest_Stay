@@ -25,6 +25,7 @@
         padding: 4px 8px;
         background-color: $neutral-600;
         border-radius: 8px 0;
+        z-index: 1;
     }
 
     &-img {
@@ -34,7 +35,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            // clip-path: inset(0 round 9px);
         }
+        // .tag-img {
+        //     clip-path: path('M 0 0 h 9 a 9 9 0 0 1 9 9 v 87 h -96 v -96 h 9');
+        // }
     }
 
     &-content {
