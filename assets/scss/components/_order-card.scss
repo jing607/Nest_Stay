@@ -9,11 +9,11 @@
     &-header {
         display: flex;
         align-items: center;
-    } 
-
-    &-cover {
         position: relative;
-        border-radius: 8px;
+    } 
+    
+    &-cover {
+        border-radius: 12px;
         overflow: hidden;
         width: 96px;
         height: 96px;

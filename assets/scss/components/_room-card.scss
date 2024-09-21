@@ -3,9 +3,9 @@
     width: 343px;
     border: 0;
     border-radius: 12px;
+    position: relative;
 
     &-cover {
-        position: relative;
         border-radius: 12px 12px 0 0;
         overflow: hidden;
         height: 188px;
@@ -68,9 +68,9 @@
     width: 240px;
     border: 0;
     border-radius: 12px;
+    position: relative;
 
     &-cover {
-        position: relative;
         border-radius: 12px 12px 0 0;
         overflow: hidden;
         height: 190px;
@@ -82,7 +82,7 @@
         padding: 8px;
         background-color: $neutral-600;
         border-radius: 8px 0;
-        z-index: 1;    
+        z-index: 1;
     }
 
     .location {
