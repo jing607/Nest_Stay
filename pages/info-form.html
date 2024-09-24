@@ -89,7 +89,7 @@
 
     <div class="bottom-sheet bg-neutral-900">
         <div class="btn-only-sheet">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-custom">送出申請</button>
+          <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#modal-custom">送出申請</button>
         </div>
     </div>
   
@@ -98,16 +98,16 @@
     aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs20-bold-lh140" id="customModalLabel">已送出申請，等待審核中</h1>
-            </div>
-            <div class="modal-body">
-                <img src="../assets/images/illustration/illu-for-modal.svg" alt="">
-            </div>
-            <div class="modal-footer">
-                <a href="index.html" type="button" class="btn btn-thirdy btn-bold-lh130">回首頁</a>
-                <a href="#" type="button" class="btn btn-primary btn-bold-lh130">查看訂單詳情</a>
-            </div>
+                <div class="modal-header">
+                    <h1 class="modal-title fs20-bold-lh140" id="customModalLabel">已送出申請，等待審核中</h1>
+                </div>
+                <div class="modal-body">
+                    <img src="../assets/images/illustration/illu-for-modal.svg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html" type="button" class="btn btn-thirdy btn-bold-lh130">回首頁</a>
+                    <a href="#" type="button" class="btn btn-primary btn-bold-lh130">查看訂單詳情</a>
+                </div>
             </div>
         </div>
     </div>
@@ -115,17 +115,26 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-        const textarea = document.getElementById('formControlInputDescription');
-        const maxLength = 200;
-
-        textarea.addEventListener('input', function() {
-            if (textarea.value.length > maxLength) {
-                textarea.classList.add('error');
-            } else {
-                textarea.classList.remove('error');
+            const descriptionTextarea = document.getElementById('formControlInputDescription');
+            const submitButton = document.querySelector('.btn-primary[data-bs-toggle="modal"]');
+            const maxDescriptionLength = 200;
+            
+            function handleTextareaInput() {
+                const isExceedingMaxLength = descriptionTextarea.value.length > maxDescriptionLength;
+                toggleErrorState(isExceedingMaxLength);
+                toggleSubmitButtonState(isExceedingMaxLength);
             }
+
+            function toggleErrorState(isError) {
+                descriptionTextarea.classList.toggle('error', isError);
+            }
+
+            function toggleSubmitButtonState(isDisabled) {
+                submitButton.disabled = isDisabled;
+            }
+
+            descriptionTextarea.addEventListener('input', handleTextareaInput);
         });
-    });
     </script>
     <script type="module" src="../main.js"></script>
   </body>
