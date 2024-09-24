@@ -17,13 +17,11 @@
         background-color: $neutral-350;
         
         &::placeholder {
-          color: white;
+          color: $neutral-100;
         }
         &:disabled {
             background-color: rgba(94, 94, 94, 0.12);
-            &::placeholder {
-                color: $neutral-300;    
-            }
+            color: $neutral-300;
         }
     }
     .form-control {
@@ -31,8 +29,9 @@
         font-weight: normal;
         max-width: 100%;
         &.error {
-            outline: .5px solid $danger-200;
-            box-shadow: 0 0 0 0.25rem rgba(255, 137, 125, 0.25);
+            outline: .5px solid white;
+            box-shadow: none;
+            color: $danger-200;
         }
     }
     &__description {
