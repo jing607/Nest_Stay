@@ -5,6 +5,21 @@
 }
 
 .result-filter {
+      .btn-thirdy {
+        color: $neutral-100;
+        background-color: $neutral-600;
+    
+        &:active,
+        &:focus {
+            color: $neutral-100;
+            border-color: transparent;
+            svg path, svg circle{
+                fill: white; 
+                transition: fill 0.1s ease-in-out;
+                transition-delay: 0s;
+            }
+        }
+    }
     .active {
         color: #e3702d;
         border-color: $primary;

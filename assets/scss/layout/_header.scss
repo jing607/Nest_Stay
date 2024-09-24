@@ -26,3 +26,7 @@
   transition: fill 0.1s ease-in-out;
   transition-delay: 0s; /* 確保沒有延遲 */
 }
+
+.nav-link.disabled {
+  color: white;
+}
