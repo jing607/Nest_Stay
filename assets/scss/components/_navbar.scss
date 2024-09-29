@@ -12,6 +12,7 @@
 }
 .nav-tabs .nav-link {
     border-bottom: 2px solid $neutral-700;
+    height: 40px;
     
     &:hover, &:focus, &:active {
         border-color: $neutral-700;
